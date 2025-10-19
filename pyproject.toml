@@ -1,0 +1,7 @@
+[project]
+name = "fastmcp-template"
+version = "0.1.0"
+description = "Your Go-to template to learn FastMCP"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
