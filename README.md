@@ -8,14 +8,7 @@ The fastest way to get your FastMCP server running in the cloud:
 
 ### One-Click Deploy
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/YOUR_TEMPLATE_URL)
-
-Or manually:
-1. Go to [railway.app](https://railway.app)
-2. Create a new project → "Deploy from GitHub repo"
-3. Select this repository
-4. Railway automatically detects the `Dockerfile` and deploys
-5. Your server gets a public URL: `https://your-railway-url.up.railway.app/mcp`
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.com/deploy/fastmcp)
 
 ### Connect Remote Client to Railway
 
@@ -50,15 +43,6 @@ uv run my_client_remote.py
 export RAILWAY_URL="https://your-railway-url.up.railway.app/mcp"
 uv run my_client_remote.py
 ```
-
-### Railway Benefits
-
-✅ **One-Click Deploy** - No infrastructure setup needed  
-✅ **Automatic HTTPS** - SSL/TLS certificates included  
-✅ **Global Access** - Your API accessible worldwide  
-✅ **Auto-Deploy** - Updates when you push to GitHub  
-✅ **Built-in Monitoring** - Logs and performance metrics  
-✅ **Custom Domain** - Add your own domain easily  
 
 ---
 
