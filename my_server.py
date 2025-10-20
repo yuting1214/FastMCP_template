@@ -1,7 +1,10 @@
 import asyncio
 from fastmcp import FastMCP
 
-mcp = FastMCP("My MCP Server")
+mcp = FastMCP(
+    "My MCP Server",
+    stateless_http=True
+    )
 
 @mcp.tool
 def greet(name: str) -> str:
