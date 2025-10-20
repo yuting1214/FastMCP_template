@@ -7,17 +7,18 @@ from agents import (
     Agent,
     Runner,
     set_tracing_export_api_key,
-    AsyncOpenAI,
     OpenAIResponsesModel,
     HostedMCPTool
 )
 
 _ = load_dotenv('.env')
-set_tracing_export_api_key(os.getenv("OPENAI_API_KEY"))
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+MCP_URL = os.getenv("MCP_URL", "http://localhost:8080/mcp")
+set_tracing_export_api_key(OPENAI_API_KEY)
 
 async def main(input: str):
     client = AsyncOpenAI(
-        api_key=os.getenv("OPENAI_API_KEY"),
+        api_key=OPENAI_API_KEY,
         http_client=DefaultAioHttpClient(),
     )
     
@@ -35,7 +36,7 @@ async def main(input: str):
                         "type": "mcp",
                         "server_label": "my_mcp_server",
                         "server_description": "My MCP server to greet user",
-                        "server_url": os.getenv("MCP_URL"),
+                        "server_url": MCP_URL,
                         "require_approval": "never",
                     }
                 )
