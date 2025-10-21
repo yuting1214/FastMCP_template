@@ -9,4 +9,5 @@ dependencies = [
     "openai[aiohttp]>=2.5.0",
     "openai-agents>=0.4.0",
     "ruff>=0.14.1",
+    "fastapi>=0.119.1",
 ]

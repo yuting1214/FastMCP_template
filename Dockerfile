@@ -27,4 +27,4 @@ RUN uv sync --frozen
 COPY . .
 
 # Command to run the uvicorn server
-CMD ["sh", "-c", "uv run fastmcp run my_server.py:mcp --transport http --host 0.0.0.0 --port $PORT"]
+CMD ["uv run my_server.py"]

@@ -8,7 +8,7 @@ import os
 import asyncio
 from fastmcp import Client
 
-PORT = os.getenv("PORT", "8080")
+PORT = os.getenv("PORT", "8011")
 HOST_URL = os.getenv("HOST_URL", "http://localhost")
 client = Client(f"{HOST_URL}:{PORT}/mcp")
 
