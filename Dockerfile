@@ -27,4 +27,4 @@ RUN uv sync --frozen
 COPY . .
 
 # Command to run the uvicorn server
-CMD ["uv run my_server.py"]
+CMD ["uv", "run", "my_server.py"]
